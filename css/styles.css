@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #ff4136;
+    --secondary-color: #333333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #e60000;
+    border-color: #e60000;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.hero {
+    background: linear-gradient(rgba(255, 65, 54, 0.8), rgba(54, 57, 255, 0.8)), url('placeholder-hero-image.jpg');
+    background-position: right bottom !important;
+    height: 400px;
+    background-size: cover;
+    background-position:right center !important;
+    transition: background-image 1s ease-in-out;
+  
+    text-align: center;
+    bottom: auto;
+}
+.h-link{
+    color: var(--primary-color) !important;
+    
+}
+
+.h-link:hover, .active{
+    color: var(--primary-color) !important;
+    font-weight: bold;
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+
+}
+
+.navbar-toggler:hover{
+    background-color: #ff4136;
+}
+
+.logoroda{
+    opacity: 0.5 !important;
+    transition: ease-in-out;
+}
+
+/* Telas pequenas - Celulares (sm) */
+@media (max-width: 576px) {
+    /* Coloque aqui os estilos para telas pequenas */
+    #logo_on_slide{
+        height: 100px !important;
+        transition: 0.7s;
+    }
+}
+
+@media (min-width: 576px) {
+    /* Coloque aqui os estilos para telas pequenas */
+    #logo_on_slide{
+        height: 100px !important;
+        transition: 0.7s;
+    }
+}
+
+/* Telas médias - Tablets (md) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Coloque aqui os estilos para telas médias */
+    #logo_on_slide{
+        height: 100px !important;
+        transition: 0.7s;
+    }
+}
+
+/* Telas grandes - Desktop (lg) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Coloque aqui os estilos para telas grandes */
+    #logo_on_slide{
+        height: 120px !important;
+        transition: 0.7s;
+    }
+}
+
+/* Telas muito grandes - Desktop grande (xl) */
+@media (min-width: 1200px) {
+    /* Coloque aqui os estilos para telas muito grandes */
+    #logo_on_slide{
+        height: 120px !important;
+        transition: 0.7s;
+    }
+}

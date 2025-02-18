@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider com JavaScript Puro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .background-slider-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s ease-in-out;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Seção com Slider no Background -->
+    <section class="background-slider-section">
+        <h1>Bem-vindo ao meu site</h1>
+        <p>Slider de imagens no background usando JavaScript puro.</p>
+    </section>
+
+    <script>
+        // Lista de URLs das imagens
+        const imagens = [
+            'images/imageSlide1.jpeg',
+            'images/imageSlide2.jpeg',
+            'images/imageSlide5.jpeg'
+        ];
+
+        // Referência à seção
+        const section = document.querySelector('.background-slider-section');
+        let currentImageIndex = 0;
+
+        // Função para trocar imagem
+        function trocarImagem() {
+            section.style.backgroundImage = `url(${imagens[currentImageIndex]})`;
+            currentImageIndex = (currentImageIndex + 1) % imagens.length;
+        }
+
+        // Chama a função de troca de imagem a cada 5 segundos
+        setInterval(trocarImagem, 5000);
+    </script>
+
+</body>
+</html>

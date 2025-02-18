@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Curso - PRIOD Centro Técnico de Formação de Excelência</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff4136;
+            --secondary-color: #333333;
+        }
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+        .bg-secondary {
+            background-color: var(--secondary-color) !important;
+        }
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: #e60000;
+            border-color: #e60000;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">PRIOD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="cursos.html">Cursos</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" id="courseBreadcrumb">Nome do Curso</li>
+                </ol>
+            </nav>
+
+            <h1 class="mb-4" id="courseTitle">Nome do Curso</h1>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Descrição do Curso</h5>
+                            <p class="card-text" id="courseDescription">Descrição detalhada do curso será exibida aqui.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Conteúdo Programático</h5>
+                            <ul class="list-group list-group-flush" id="courseContent">
+                                <!-- Course content will be dynamically inserted here -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Oportunidades de Carreira</h5>
+                            <ul class="list-group list-group-flush" id="careerOpportunities">
+                                <!-- Career opportunities will be dynamically inserted here -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Informações do Curso</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>Duração:</strong> <span id="courseDuration"></span></li>
+                                <li><strong>Preço:</strong> <span id="coursePrice"></span></li>
+                                <li><strong>Modalidade:</strong> <span id="courseModality"></span></li>
+                                <li><strong>Próxima Turma:</strong> <span id="courseNextClass"></span></li>
+                            </ul>
+                            <a href="#" class="btn btn-primary w-100">Inscreva-se Agora</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Precisa de Mais Informações?</h5>
+                            <p>Entre em contato conosco para esclarecer suas dúvidas sobre o curso.</p>
+                            <a href="contato.html" class="btn btn-outline-primary w-100">Fale Conosco</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-secondary text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>PRIOD</h5>
+                    <p>Centro Técnico Profissional de Excelência</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Contato</h5>
+                    <p><i class="bi bi-telephone"></i> +244 933 412 141</p>
+                    <p><i class="bi bi-envelope"></i> info@priod.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Sample course data (in a real application, this would be fetched from a server)
+        const courses = {
+            "automatos-programavel": {
+                title: "Autómatos Programável (PLC Siemens e Portal TIA)",
+                description: "Este curso oferece uma introdução abrangente aos Controladores Lógicos Programáveis (PLCs) Siemens e ao ambiente de programação TIA Portal. Os participantes aprenderão a projetar, programar e implementar sistemas de automação industrial usando tecnologia de ponta.",
+                duration: "30 horas",
+                price: "185.000 kzs",
+                modality: "Presencial",
+                nextClass: "15 de Agosto de 2024",
+                content: [
+                    "Introdução aos PLCs Siemens",
+                    "Fundamentos do TIA Portal",
+                    "Programação em Ladder Logic",
+                    "Configuração de hardware e rede",
+                    "Integração com HMI",
+                    "Diagnóstico e resolução de problemas"
+                ],
+                careerOpportunities: [
+                    "Engenheiro de Automação Industrial",
+                    "Técnico de PLC",
+                    "Especialista em Sistemas de Controle",
+                    "Integrador de Sistemas Industriais"
+                ]
+            }
+            // Add more courses here
+        };
+
+        function loadCourseDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const courseId = urlParams.get('id');
+            const course = courses[courseId];
+
+            if (course) {
+                document.title = `${course.title} - PRIOD Centro Técnico de Formação de Excelência`;
+                document.getElementById('courseBreadcrumb').textContent = course.title;
+                document.getElementById('courseTitle').textContent = course.title;
+                document.getElementById('courseDescription').textContent = course.description;
+                document.getElementById('courseDuration').textContent = course.duration;
+                document.getElementById('coursePrice').textContent = course.price;
+                document.getElementById('courseModality').textContent = course.modality;
+                document.getElementById('courseNextClass').textContent = course.nextClass;
+
+                const contentList = document.getElementById('courseContent');
+                course.content.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'list-group-item';
+                    li.textContent = item;
+                    contentList.appendChild(li);
+                });
+
+                const opportunitiesList = document.getElementById('careerOpportunities');
+                course.careerOpportunities.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'list-group-item';
+                    li.textContent = item;
+                    opportunitiesList.appendChild(li);
+                });
+            } else {
+                document.getElementById('courseTitle').textContent = "Curso não encontrado";
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadCourseDetails);
+    </script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - PRIOD Centro Técnico de Formação de Excelência</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff4136;
+            --secondary-color: #333333;
+        }
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+        .bg-secondary {
+            background-color: var(--secondary-color) !important;
+        }
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: #e60000;
+            border-color: #e60000;
+        }
+        .card {
+            height: 100%;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-text {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">PRIOD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-primary text-white py-5">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Nossos Serviços</h1>
+                <p class="fs-4">Soluções profissionais integradas para sua empresa</p>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Serviços PRIOD</h2>
+                    <p class="fs-5 text-muted mx-auto" style="max-width: 700px;">
+                        Oferecemos um conjunto completo de soluções tecnológicas e serviços profissionais para atender às necessidades do seu negócio e indústria.
+                    </p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="servicesContainer">
+                    <!-- Services will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold mb-3">Precisa dos Nossos Serviços?</h2>
+                <p class="fs-5 text-muted mb-4 mx-auto" style="max-width: 700px;">
+                    Entre em contato conosco para discutir como podemos ajudar sua empresa com nossas soluções tecnológicas e serviços profissionais.
+                </p>
+                <a href="contato.html" class="btn btn-primary btn-lg">Fale Conosco</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>PRIOD</h5>
+                    <p>Centro Técnico Profissional de Excelência</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Contato</h5>
+                    <p><i class="bi bi-telephone"></i> +244 933 412 141</p>
+                    <p><i class="bi bi-envelope"></i> info@priod.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const services = [
+            {
+                icon: 'bi-mortarboard',
+                title: "Formação e Capacitação",
+                description: "Formação profissional especializada para funcionários na indústria e público em geral.",
+                subServices: [
+                    "Treinamento industrial em diversas áreas",
+                    "Formação técnica profissional",
+                    "Cursos especializados",
+                    "Workshops e seminários"
+                ]
+            },
+            {
+                icon: 'bi-wrench',
+                title: "Manutenção Industrial",
+                description: "Serviços especializados de manutenção em equipamentos industriais e sistemas automatizados.",
+                subServices: [
+                    "Manutenção preventiva e corretiva",
+                    "Automação e controle industrial",
+                    "Instalação e configuração de PLCs",
+                    "Otimização de processos industriais"
+                ]
+            },
+            {
+                icon: 'bi-code-slash',
+                title: "Desenvolvimento de Software",
+                description: "Soluções personalizadas para diversos setores.",
+                subServices: [
+                    "Sistema de Gestão Escolar para colégios e creches",
+                    "Sistema de Gestão de Centro de Formação",
+                    "Sistema de Gestão Comercial e Faturação",
+                    "Sistema de Gestão Hospitalar para clínicas e consultórios"
+                ]
+            },
+            {
+                icon: 'bi-globe',
+                title: "Desenvolvimento Web",
+                description: "Criação de sites e soluções web personalizadas.",
+                subServices: [
+                    "Sites Básicos",
+                    "Sites Intermédios",
+                    "Sites Personalizados",
+                    "Portais Corporativos"
+                ]
+            },
+            {
+                icon: 'bi-gear',
+                title: "Inovação e Assessoria",
+                description: "Suporte técnico e consultoria especializada.",
+                subServices: [
+                    "Inovação tecnológica industrial",
+                    "Assessoria técnica",
+                    "Consultoria em automação",
+                    "Soluções tecnológicas personalizadas"
+                ]
+            },
+            {
+                icon: 'bi-hdd-network',
+                title: "Infraestrutura e Redes",
+                description: "Implementação e manutenção de infraestrutura de TI.",
+                subServices: [
+                    "Instalação e configuração de servidores Windows e Linux",
+                    "Implementação de redes estruturadas",
+                    "Redes domésticas e empresariais",
+                    "Manutenção de infraestrutura"
+                ]
+            },
+            {
+                icon: 'bi-building',
+                title: "Segurança do Trabalho",
+                description: "Consultoria e implementação de medidas de segurança e saúde ocupacional.",
+                subServices: [
+                    "Avaliação de riscos no ambiente de trabalho",
+                    "Treinamentos em segurança",
+                    "Implementação de protocolos de segurança",
+                    "Auditorias de segurança"
+                ]
+            },
+            {
+                icon: 'bi-heart-pulse',
+                title: "Saúde Ocupacional",
+                description: "Serviços de saúde e bem-estar para colaboradores.",
+                subServices: [
+                    "Exames médicos ocupacionais",
+                    "Programas de qualidade de vida",
+                    "Ergonomia no ambiente de trabalho",
+                    "Prevenção de doenças ocupacionais"
+                ]
+            },
+            {
+                icon: 'bi-book',
+                title: "Cursos Técnicos",
+                description: "Cursos especializados em diversas áreas técnicas.",
+                subServices: [
+                    "Automação Industrial",
+                    "Eletricidade",
+                    "Mecânica",
+                    "Instrumentação e Controle"
+                ]
+            }
+        ];
+
+        function createServiceCard(service) {
+            return `
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="text-primary mb-3">
+                                <i class="bi ${service.icon} fs-1"></i>
+                            </div>
+                            <h5 class="card-title">${service.title}</h5>
+                            <p class="card-text">${service.description}</p>
+                            <ul class="list-unstyled mt-3">
+                                ${service.subServices.map(subService => `
+                                    <li class="mb-2">
+                                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                        ${subService}
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const servicesContainer = document.getElementById('servicesContainer');
+            services.forEach(service => {
+                servicesContainer.innerHTML += createServiceCard(service);
+            });
+        });
+    </script>
+</body>
+</html>

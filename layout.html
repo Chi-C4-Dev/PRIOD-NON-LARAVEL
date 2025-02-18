@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIOD - Centro Técnico Profissional de Excelência</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"> 
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    
+     <!-- CSS do AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <header class="bg-light text-primary sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="PRIOD Logo" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item " >
+                            <a class="nav-link h-link " href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h-link active" href="cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h-link" href="cursos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h1 class="display-4 fw-bold">Nossos Cursos</h1>
+                    <p class="lead text-muted">O Conhecimento De Excelência Ao Alcance De Todos</p>
+                </div>
+    
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="coursesList">
+                    <!-- Courses will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+      
+    </main>
+
+
+    <footer class="bg-secondary text-white py-4 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>PRIOD</h5>
+                    <p>Centro Técnico Profissional de Excelência</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Contato</h5>
+                    <p><i class="bi bi-telephone"></i> +244 933 412 141</p>
+                    <p><i class="bi bi-envelope"></i> priodcentrotecnicoprofissional@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+    <script>
+        const courses = [
+            // Primeira tabela
+            { name: "Autómatos Programável (PLC Siemens e Portal TIA)", duration: "30h", price: "185.000 kzs" },
+            { name: "Sistemas SCADA e HMI", duration: "30h", price: "115.000 kzs" },
+            { name: "Mecânica Auto", duration: "40h", price: "120.000 kzs" },
+            { name: "Electricidade Auto", duration: "36h", price: "115.000 kzs" },
+            { name: "Tecnologia de Controlo e Processos na Indústria Petrolífera", duration: "36h", price: "115.000 kzs" },
+            { name: "Inglês Técnico (nível I)", duration: "4 meses/1 mês", price: "13.900 kzs" },
+            { name: "Inglês Técnico (nível II)", duration: "4 meses/1 mês", price: "13.900 kzs" },
+            { name: "Inglês Técnico (nível III)", duration: "4 meses/1 mês", price: "13.900 kzs" },
+            { name: "Electrónica Geral (nível I)", duration: "2 meses", price: "120.000 kzs" },
+            { name: "Electrónica Geral (nível II)", duration: "2 meses", price: "125.000 kzs" },
+            
+            // Segunda tabela
+            { name: "Instrumentação e Processos Industriais", duration: "40h", price: "164.000 kzs" },
+            { name: "Automação Industrial", duration: "32h", price: "180.000 kzs" },
+            { name: "Electricidade baixa tensão (Construção Civil)", duration: "32h", price: "95.000 kzs" },
+            { name: "Electricidade Industrial", duration: "32h", price: "100.000 kzs" },
+            { name: "Hidráulica e Pneumática Industrial", duration: "30h", price: "90.000 kzs" },
+            { name: "Higiene, Saúde e Segurança no Trabalho (nível I)", duration: "24h", price: "85.000 kzs" },
+            { name: "Higiene, Saúde e Segurança no Trabalho (nível II)", duration: "24h", price: "115.000 kzs" },
+            { name: "Combates contra Incêndios e Técnicas de Primeiros Socorros", duration: "24h", price: "80.000 kzs" },
+            { name: "Controlo de Qualidade", duration: "30h", price: "110.000 kzs" },
+            { name: "Elaboração de Projecto de Impactes Ambientais", duration: "40h", price: "480.000 kzs" },
+            { name: "Elaboração de Projecto de Arquitectura", duration: "40h", price: "485.000 kzs" },
+            { name: "Elaboração de Projecto Industrial", duration: "40h", price: "550.000 kzs" },
+            { name: "Gestão de Qualidade", duration: "24h", price: "85.000 kzs" },
+            { name: "Comandos Eléctricos", duration: "32h", price: "135.000 kzs" },
+            { name: "Electromecânica Industrial", duration: "32h", price: "105.000 kzs" },
+            { name: "Design Mecânico", duration: "30h", price: "105.000 kzs" },
+            { name: "Automação e Controle Residencial", duration: "32h", price: "170.000 kzs" }
+        ];
+
+        function createCourseCard(course) {
+            return `
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">${course.name}</h5>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    <i class="bi bi-clock me-2"></i>Duração: ${course.duration}
+                                </small>
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    <i class="bi bi-cash-coin me-2"></i>Preço: ${course.price}
+                                </small>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary w-100">Sobre o curso</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const coursesList = document.getElementById('coursesList');
+            courses.forEach(course => {
+                coursesList.innerHTML += createCourseCard(course);
+            });
+        });
+    </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
